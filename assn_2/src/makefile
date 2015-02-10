@@ -1,15 +1,27 @@
-# Executable
-EXEC = assn_2
-# Compiler
+# Source, data, and include folders
+SRCDIR = ../src
+IDIR = ../include
+ODIR = ../lib
+
+# Compile parameters
 CC = g++
-# Compiler options
-CFLAGS = -c -Wall
+CFLAGS = -Wall
+_DEPS = main.h
+DEPS = $(patsubst %, $(IDIR)/$, $(_DEPS))
 
-all: main
+LIBS = -lm
 
-main: main.o
-	$(CC) -o $(EXEC) main.o
+_OBJ = main.o
+OBJ = $(patsubst %, $(ODIR)/%, $(_OBJ))
 
-main.o: main.c
-	$(CC) $(CFLAGS) main.c
+$(ODIR)/%.o: %.cpp $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+assn_2: $(OBJ)
+	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
+
+all: assn_2
+
+clean:
+	rm -f $(ODIR)/*.o
 
