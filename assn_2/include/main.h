@@ -10,6 +10,14 @@
 // Order holes in descending size order in availability list
 #define STRATEGY_WORST_FIT "--worst-fit"
 
+#define OUT_FILE_INDEX "index.bin"
+#define OUT_FILE_AVAIL "avail.bin"
+
+#define CMD_ADD "add"
+#define CMD_DELETE "del"
+#define CMD_FIND "find"
+#define CMD_END "end"
+
 typedef struct
 {
 	// Record's key
@@ -23,3 +31,11 @@ typedef struct
 	int size;
 	long off;
 } avail_S;
+
+typedef struct
+{
+	int id;
+	std::string last;
+	std::string first;
+	std::string major;
+} studentRecord;
