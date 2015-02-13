@@ -114,8 +114,7 @@ Attempt to delete a record by its key. If the record does not exist,
 a message is displayed indicating that it could not be found.
 
 ```end```
-
-: Exit the program.
+Exit the program.
 
 ### Running Example Test Cases
 
