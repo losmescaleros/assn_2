@@ -56,9 +56,9 @@ If holes are the same size, they are sorted in ascending offset order.
 
 The file structure of the project is as follows:
 
-- ```data/``` contains an ```examples``` folder with example input and output for the program
-- ```include``` contains header files
-- ```src``` contains the programs source code and makefile
+- ```data/``` contains an ```examples/``` folder with example input and output for the program
+- ```include/``` contains header files
+- ```src/``` contains the programs source code and makefile
 
 ### Compiling
 
@@ -95,6 +95,7 @@ Strategy arguments include:
 Once the application begins, the user may specify the following commands:
 
 ```add key rec```
+
 : Attempt to add a record ```rec``` with an integer key ```key```. Records
 should be '|' character delimited. If the record exists, a message indicating 
 that the record could not be added is displayed.
@@ -104,15 +105,18 @@ _Example_
 	```
 	
 ```find key```
+
 : Attempt to find a record with a specific key. If the record is found, its
 record contains are displayed, otherwise a message is displayed indicating 
 that it could not be found. 
 
 ```del key```
+
 : Attempt to delete a record by its key. If the record does not exist,
 a message is displayed indicating that it could not be found.
 
 ```end```
+
 : Exit the program.
 
 ### Running Example Test Cases
