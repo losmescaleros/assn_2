@@ -100,9 +100,9 @@ should be '|' character delimited. If the record exists, a message indicating
 that the record could not be added is displayed.
 
 > _Example_
-	```
-	add 712412913 712412913|Ford|Rob|Phi
-	```
+```
+add 712412913 712412913|Ford|Rob|Phi
+```
 	
 ```find key```
 Attempt to find a record with a specific key. If the record is found, its
@@ -113,7 +113,7 @@ that it could not be found.
 Attempt to delete a record by its key. If the record does not exist,
 a message is displayed indicating that it could not be found.
 
-```end```
+```end ```
 Exit the program.
 
 ### Running Example Test Cases
