@@ -95,24 +95,22 @@ Strategy arguments include:
 Once the application begins, the user may specify the following commands:
 
 ```add key rec```
-
-: Attempt to add a record ```rec``` with an integer key ```key```. Records
+Attempt to add a record ```rec``` with an integer key ```key```. Records
 should be '|' character delimited. If the record exists, a message indicating 
 that the record could not be added is displayed.
-_Example_
+
+> _Example_
 	```
 	add 712412913 712412913|Ford|Rob|Phi
 	```
 	
 ```find key```
-
-: Attempt to find a record with a specific key. If the record is found, its
+Attempt to find a record with a specific key. If the record is found, its
 record contains are displayed, otherwise a message is displayed indicating 
 that it could not be found. 
 
 ```del key```
-
-: Attempt to delete a record by its key. If the record does not exist,
+Attempt to delete a record by its key. If the record does not exist,
 a message is displayed indicating that it could not be found.
 
 ```end```
